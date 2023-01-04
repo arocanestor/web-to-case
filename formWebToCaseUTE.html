@@ -132,8 +132,8 @@
             }
             gatApiSalesforce(){
                 let myHeaders = new Headers();
-                    myHeaders.append("Authorization", "Bearer 00D7j000000H3kd!ARwAQLH64kLwmYydK8Doh7.eHXI1hFhm1WtcXHx.fV31pnTymeYZkk0qXl8F6zvWFkHZrgJfYmaYr04UbFoR.oZ0gseDSeFA");
-                    myHeaders.append("Cookie", "BrowserId=2cjgeGA_Ee2q9j9ENT3K5Q; CookieConsentPolicy=0:0; LSKey-c$CookieConsentPolicy=0:0");
+                            myHeaders.append("Access-Control-Allow-Origin" , "*");
+                            myHeaders.append("Access-Control-Allow-Methods","GET,HEAD,POST");
 
                     let requestOptions = {
                     method: 'POST',
