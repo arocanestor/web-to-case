@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="https://universidadute--sandboxute.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+    
+    <input type=hidden name="orgid" value="00D7d0000077owG">
+    <input type=hidden name="retURL" value="https://universidadute--sandboxute.sandbox.lightning.force.com/">
+    <div>
+        <label for="Programa__c">Programa academico</label>
+        <select name="Programa__c" id="Programa__c" onchange="campurarDatosFormulario(this)">
+            <option value="1">SELECCIONA LA CARRERAA ESTUDIAR</option>
+            <option value="2">ADMINISTRACION DE EMPRESAS / ABR 2023 - AGO 2023</option>
+            <option value="3">ALIMENTOS / ABR 2023 - AGO 2023</option>
+            <option value="4">ARQUITECTURA / OCT 2022 - FEB 2023</option>
+            <option value="5">ARQUITECTURA / ABR 2023 - AGO 2023</option>
+            <option value="6">ATENCIÓN PREHOSPITALARIA Y EMERGENCIAS / ABR 2023 - AGO 2023</option>
+            <option value="7">COMPUTACIÓN / ABR 2023 - AGO 2023 (EN LINEA)</option>
+            <option value="7">DERECHO / ABR 2023 - AGO 2023</option>
+            <option value="8">DISEÑO GRÁFICO / ABR 2023 - AGO 2023</option>
+            <option value="9">GASTRONOMÍA / ABR 2023 - AGO 2023</option>
+            <option value="10">GESTIÓN DEL TALENTO HUMANO / ABR 2023 - AGO 2023 (EN LINEA)</option>
+            <option value="11">INGENIERÍA AUTOMOTRIZ / ABR 2023 - AGO 2023</option>
+            <option value="12">INGENIERÍA CIVIL / ABR 2023 - AGO 2023</option>
+            <option value="13">INGENIERÍA INDUSTRIAL / ABR 2023 - AGO 2023</option>
+            <option value="14">MECATRÓNICA / ABR 2023 - AGO 2023</option>
+            <option value="15">MEDICINA / ABR 2023 - AGO 2023</option>
+            <option value="16">MEDICINA VETERINARIA / ABR 2023 - AGO 2023</option>
+            <option value="17">NEGOCIOS INTERNACIONALES / ABR 2023 - AGO 2023</option>
+            <option value="18">ODONTOLOGÍA / ABR 2023 - AGO 2023</option>
+            <option value="19">TERAPIA RESPIRATORIA / ABR 2023 - AGO 2023</option>
+        </select>
+    </div>
+    <div>
+        <label for="Tipo_documento__c">Tipo de identificación</label>
+        <select name="Tipo_documento__c" id="Tipo_documento__c" onchange="campurarDatosFormulario(this)">
+            <option value="Cedula"></option>
+            <option value="Pasaporte"></option>
+        </select>
+    </div>
+    <div>
+        <label for="Numero_de_documento__c">Numero de identificación</label>
+        <input type="text" name="Numero_de_documento__c" id="Numero_de_documento__c" onchange="campurarDatosFormulario(this)">
+    </div>
+    <div >
+        <label for="Primer_nombre__c">Primer nombre</label>
+        <input type="text" name="Primer_nombre__c" id="Primer_nombre__c" onchange="campurarDatosFormulario(this)">
+    </div>
+    <div>
+        <label for="Segundo_nombre__c">Segundo nombre</label>
+        <input type="text" name="Segundo_nombre__c" id="Segundo_nombre__c" onchange="campurarDatosFormulario(this)">
+    </div>
+    <div>
+        <label for="Sexo__c">Sexo</label>
+        <input type="text" name="Sexo__c" id="Sexo__c" onchange="campurarDatosFormulario(this)">
+    </div>
+    <div>
+        <label for="Fecha_de_nacimiento__c">Fecha de nacimiento</label>
+        <input type="date" name="Fecha_de_nacimiento__c" id="Fecha_de_nacimiento__c" onchange="campurarDatosFormulario(this)">        
+    </div>
+    <div>
+        <label for="Correo_electr_nico__c1">Correo electrónico</label>
+        <input type="email" name="Correo_electr_nico__c1" id="Correo_electr_nico__c1" onchange="campurarDatosFormulario(this)">        
+    </div>
+    <div>
+        <label for="Correo_electr_nico__c">Confirmar correo electrónico</label>
+        <input type="email" name="Correo_electr_nico__c" id="Correo_electr_nico__c" onchange="campurarDatosFormulario(this)">        
+    </div>
+    <div>
+        <label for="Tel_fono__c">Número celular</label>
+        <input type="text" name="Tel_fono__c" id="Tel_fono__c" onchange="campurarDatosFormulario(this)">        
+    </div>
+    <div>
+        <label for="Numero_convencional__c">Número convencional</label>
+        <input type="text" name="Numero_convencional__c" id="Numero_convencional__c" onchange="campurarDatosFormulario(this)">        
+    </div>
+
+    
+    PDF1_1:<textarea  id="00N4x00000aXEKM" name="00N4x00000aXEKM" rows="3" type="text" wrap="soft"></textarea><br>
+    
+    PDF1_2:<textarea  id="00N4x00000aXEKR" name="00N4x00000aXEKR" rows="3" type="text" wrap="soft"></textarea><br>
+    
+    PDF1_3:<textarea  id="00N4x00000aXEKW" name="00N4x00000aXEKW" rows="3" type="text" wrap="soft"></textarea><br>
+    
+    PDF2_1:<textarea  id="00N4x00000aXEKb" name="00N4x00000aXEKb" rows="3" type="text" wrap="soft"></textarea><br>
+    
+    PDF2_2:<textarea  id="00N4x00000aXEKg" name="00N4x00000aXEKg" rows="3" type="text" wrap="soft"></textarea><br>
+    
+    PDF2_3:<textarea  id="00N4x00000aXEKl" name="00N4x00000aXEKl" rows="3" type="text" wrap="soft"></textarea><br>
+    
+    PDF3_1:<textarea  id="00N4x00000aXEKq" name="00N4x00000aXEKq" rows="3" type="text" wrap="soft"></textarea><br>
+    
+    PDF3_2:<textarea  id="00N4x00000aXEKv" name="00N4x00000aXEKv" rows="3" type="text" wrap="soft"></textarea><br>
+    
+    PDF3_3:<textarea  id="00N4x00000aXEL0" name="00N4x00000aXEL0" rows="3" type="text" wrap="soft"></textarea><br>
+    
+    PDF4_1:<textarea  id="00N4x00000aXEL5" name="00N4x00000aXEL5" rows="3" type="text" wrap="soft"></textarea><br>
+    
+    PDF4_2:<textarea  id="00N4x00000aXELA" name="00N4x00000aXELA" rows="3" type="text" wrap="soft"></textarea><br>
+    
+    PDF4_3:<textarea  id="00N4x00000aXELF" name="00N4x00000aXELF" rows="3" type="text" wrap="soft"></textarea><br>
+    
+    datosFormulario:<textarea  id="00N4x00000aXELP" name="00N4x00000aXELP" rows="3" type="text" wrap="soft"></textarea><br>
+    
+    <input type="submit" name="submit">
+    
+    </form>
+    <script>
+        let datosFormulario={};
+        function campurarDatosFormulario(eve){
+            datosFormulario[eve.id] = eve.value;
+            document.getElementById('00N4x00000aXELP').value = JSON.stringify(datosFormulario);
+        }
+        
+    </script>
+    <script type="text/javascript">
+        class GetToken{
+            
+            constructor(){
+                if(GetToken.instance){
+                    return GetToken.instance;
+                }
+                GetToken.instance = this;
+                this.token = this.gatApiSalesforce();
+            }
+            gatApiSalesforce(){
+                let myHeaders = new Headers();
+                    myHeaders.append("Authorization", "Bearer 00D7j000000H3kd!ARwAQLH64kLwmYydK8Doh7.eHXI1hFhm1WtcXHx.fV31pnTymeYZkk0qXl8F6zvWFkHZrgJfYmaYr04UbFoR.oZ0gseDSeFA");
+                    myHeaders.append("Cookie", "BrowserId=2cjgeGA_Ee2q9j9ENT3K5Q; CookieConsentPolicy=0:0; LSKey-c$CookieConsentPolicy=0:0");
+
+                    let requestOptions = {
+                    method: 'POST',
+                    headers: myHeaders,
+                    redirect: 'follow'
+                    };
+
+                    fetch("https://test.salesforce.com/services/oauth2/token?grant_type=password&client_id=3MVG9IeKOu9pMLcIeWb0p7N67dFGtI1pEr2aQl0eig.YZkfk7OCUtHPNny37DUFUZg8GF_TejLtzZzNbwyOT_&client_secret=3CC2813CAAC4CD2079F0AABF052348302CDA95456640D66D4254905B56C24BB0&username=seidorconfiguracion@seidor.com.sandboxute&password=6%23^8^BLkudKLo3LYmP45A9gfaLBBU0AX0UQF9", requestOptions)
+                    .then(response => response.text())
+                    .then((result) => {return result})
+                    .catch(error => console.log('error', error));
+            }
+
+
+        }
+
+        const token = new GetToken();
+        console.log(token.token);
+
+
+        function convertToBase64(pdf) {
+            //Read File
+            var selectedFile = document.getElementById(pdf.id).files;
+            //Check File is not Empty
+            if (selectedFile.length > 0) {
+                // Select the very first file from list
+                var fileToLoad = selectedFile[0];
+                // FileReader function for read the file.
+                var fileReader = new FileReader();
+                var base64;
+                // Onload of file read the file content
+                fileReader.onload = function(fileLoadedEvent) {
+                    base64 = fileLoadedEvent.target.result;
+                   
+                    let pdf11 = '';
+                    let pdf12 = '';
+                    let pdf13 = '';
+                    let camposBase64 = base64.split(',');
+                    if(camposBase64[1].length > 393000){
+                        alert('Muy largo');
+
+                    }
+                    
+                    
+                    /*
+                    pdf11 = camposBase64[1]
+
+                    if(camposBase64[1].length > 131000){
+                        console.log('ingreso');
+                        pdf11 = camposBase64[1].slice(0,131000);
+                        pdf12 = camposBase64[1].slice(131000);
+                    }
+                    if(camposBase64[1].length > 262000){
+                        console.log('ingreso');
+                        pdf11 = camposBase64[1].slice(0,131000);
+                        pdf12 = camposBase64[1].slice(131000,393000);
+                        pdf13 = camposBase64[1].slice(393000);
+                    }
+                    
+                    if(pdf.id === 'PDF1'){
+
+                        document.getElementById('00N7b000001jY6M').value = pdf11;
+                        document.getElementById('00N7b000001jY6R').value = pdf12;
+                        document.getElementById('00N7b000001jY6W').value = pdf13;
+                    }
+                    if(pdf.id === 'PDF2'){
+                        document.getElementById('00N7b000001jY21').value = pdf11;
+                        document.getElementById('00N7b000001jY22').value = pdf12;
+                        document.getElementById('00N7b000001jY23').value = pdf13;
+                    }
+                    if(pdf.id === 'PDF3'){
+                        document.getElementById('00N7b000001jY31').value = pdf11;
+                        document.getElementById('00N7b000001jY32').value = pdf12;
+                        document.getElementById('00N7b000001jY33').value = pdf13;
+                    }
+                    if(pdf.id === 'PDF4'){
+                        document.getElementById('00N7b000001jY41').value = pdf11;
+                        document.getElementById('00N7b000001jY42').value = pdf12;
+                        document.getElementById('00N7b000001jY43').value = pdf13;
+                    }
+                                     
+                   */
+                    
+                };
+                // Convert data to base64
+                fileReader.readAsDataURL(fileToLoad);
+            }
+        }
+    </script>    
+    
+</body>
+</html>
